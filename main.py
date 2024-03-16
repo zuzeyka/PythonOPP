@@ -49,5 +49,9 @@ print(l)
 for i in range(-10, 40): # for цикл для перебора данных (типов данных с множеством значений)
     print(i) # for будет работать столькор раз сколько есть элементов в перебераемом значении
 
-import funtions
-funtions.Print("Stepan", 15)
+import functions
+functions.Print("Stepan", 15)
+
+import random
+for i in range(100):
+    print(random.randint(0, 100))
