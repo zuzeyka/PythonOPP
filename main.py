@@ -55,3 +55,34 @@ functions.Print("Stepan", 15)
 import random
 for i in range(100):
     print(random.randint(0, 100))
+
+
+
+
+# классы 
+# класс - пользовательский тип данных который можно описывать функциями и переменными
+
+class Student:
+    print("Hello")
+    def __init__(self, name, money, height): # init срабатывает только один раз при создании объекта класса
+        self.name = name # в поле name назначаю значение переданное в init параметра name 
+        self.money = money
+        self.height = height
+        print("Init") # self - ссылка на текущий объект
+    def BuyPizza(self): # можно создавать свои методы
+        self.money -= 100 # и взаимодействовасть с полями через self
+        print(self.name, "bought a pizza. Now you have", self.money, "uah")
+
+class Car:
+    def __init__(self):
+        self.color = "red"
+        self.model = "BMW"
+
+
+s = Student('Alex', 200, 180) # создание объекта
+s2 = Student("Stepan", 300, 190) # можно создавать несколько объектов
+car = Car()
+print(car.color, car.model)
+s.money = 200 # изменение значения
+print(s.name,s.money, s2.name, s2.money)
+s.BuyPizza()
