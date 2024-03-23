@@ -58,7 +58,7 @@ for i in range(100):
 
 
 import classes
-test = classes.Human("Alex", 180)
+
 # классы 
 # класс - пользовательский тип данных который можно описывать функциями и переменными
 
@@ -87,3 +87,9 @@ s.money = 200 # изменение значения
 print(s.name,s.money, s2.name, s2.money)
 s.BuyPizza()
 s.jump()
+
+class Test(classes.Human):
+    pass
+
+test = Test()
+print(test.name, test.height)
