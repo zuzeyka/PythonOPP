@@ -94,3 +94,4 @@ class Test(classes.Human):
 test = Test()
 print(test.name, test.height)
 test.name = "Stepan"
+test.height = 190
