@@ -75,7 +75,7 @@ class Student(classes.Human):
 
 class Car:
     def __init__(self):
-        self.color = "red"
+        self.color = "blue"
         self.model = "BMW"
 
 
