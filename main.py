@@ -57,12 +57,12 @@ for i in range(100):
     print(random.randint(0, 100))
 
 
-
-
+import classes
+test = classes.Human("Alex", 180)
 # классы 
 # класс - пользовательский тип данных который можно описывать функциями и переменными
 
-class Student:
+class Student(classes.Human):
     print("Hello")
     def __init__(self, name, money, height): # init срабатывает только один раз при создании объекта класса
         self.name = name # в поле name назначаю значение переданное в init параметра name 
@@ -86,3 +86,4 @@ print(car.color, car.model)
 s.money = 200 # изменение значения
 print(s.name,s.money, s2.name, s2.money)
 s.BuyPizza()
+s.jump()
